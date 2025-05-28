@@ -1,9 +1,10 @@
-import '../css/nav.css'
 import {Link} from 'react-router-dom'
-export default function Nav () {
-    return (
-        <div id='nave'>
-            <ul>
+import '../css/footer.css'
+export default function Footer(){
+    return(
+        <div id='footer'>
+            <h1>Footer</h1>
+           <ul>
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
@@ -12,6 +13,9 @@ export default function Nav () {
                 </li>
                 <li>Contact</li>
             </ul>
+            <p id='copy'>copy right @ 2025</p>
         </div>
     )
 }
+
+    
