@@ -5,6 +5,8 @@ import Home from './component/home';
 import About from './component/about';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Footer from './component/footer';
+import { Component } from 'react';
+import Greeting from './component/greeting';
 function App() {
   return(
     <BrowserRouter>
@@ -12,6 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
+        <Route path='/greeting' element={<Greeting />}/>
+
+        
       </Routes>
       <Footer />
       
