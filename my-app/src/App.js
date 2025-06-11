@@ -1,16 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './component/nav';
 import Home from './component/home';
 import About from './component/about';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Footer from './component/footer';
-import { Component } from 'react';
 import Greeting from './component/greeting';
+// import ButtonAppBar from './component/nav';
 function App() {
   return(
     <BrowserRouter>
-      <Nav />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
@@ -18,6 +16,8 @@ function App() {
 
         
       </Routes>
+    {/* <ButtonAppBar/> */}
+
       <Footer />
       
     </BrowserRouter>
